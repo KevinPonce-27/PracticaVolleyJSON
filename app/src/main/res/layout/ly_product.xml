@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="393dp"
+            android:layout_height="190dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txtIDProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="ID:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#673AB7"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBarCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtIDProducto"
+                android:layout_marginLeft="5dp"
+                android:text="barCode"
+                android:textAlignment="viewStart"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/txtPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBarCode"
+                android:layout_marginLeft="5dp"
+                android:text="Precio c/u" />
+
+            <TextView
+                android:id="@+id/txtPrecioUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPrecio"
+                android:layout_marginLeft="5dp"
+                android:text="Precio c/u" />
+
+            <TextView
+                android:id="@+id/txtPrecioMayo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPrecioUnit"
+                android:layout_marginLeft="5dp"
+                android:text="Precio Mayo" />
+
+            <TextView
+                android:id="@+id/txtCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPrecioMayo"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:text="Categoria" />
+
+            <TextView
+                android:id="@+id/txtSubCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCategoria"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="1dp"
+                android:text="Subcategoria" />
+
+            <TextView
+                android:id="@+id/txtDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSubCategoria"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:text="Descripcion" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
